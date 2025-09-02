@@ -4,6 +4,8 @@ echo "<h1>Hello World</h1>";
 $nome = "Ricardo";
 $sobrenome = "Uemura";
 
+echo strpos($nome, "a");
+
 $nomeCompleto = $nome . " " . $sobrenome;
 $idade = 21;
 
