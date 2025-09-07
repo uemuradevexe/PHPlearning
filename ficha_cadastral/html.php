@@ -3,7 +3,7 @@
 $nome = "Ricardo Uemura";
 $idade = 21;
 $sexo = "Masculino";
-$salario_mensal = 180000; // Corrigido para número sem ponto
+$salario_mensal = 180000; 
 $empregado = true;
 $skills = [
     "PHP",
@@ -19,18 +19,13 @@ $skills = [
 ];
 $aposentadoria;
 $status_empregado;
+define("APOSENTADORIA_MASCULINA","65");
+define("APOSENTADORIA_FEMININA","62");
 
-if ($empregado == true) {
-    $status_empregado = "Empregado";
-} else {
-    $status_empregado = "Desempregado";
-}
+$status_empregado = ($empregado == true) ? "Empregado" : "Desempregado"; 
 
-if ($sexo == "Masculino") {
-    $aposentadoria = 65 - $idade;
-} else {
-    $aposentadoria = 62 - $idade;
-}
+
+$aposentadoria = ($sexo == "Masculino") ? APOSENTADORIA_MASCULINA : APOSENTADORIA_FEMININA;
 
 
 ?>
