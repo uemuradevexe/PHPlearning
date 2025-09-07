@@ -51,7 +51,7 @@ $aposentadoria = ($sexo == "Masculino") ? APOSENTADORIA_MASCULINA : APOSENTADORI
 
                 <p class="bg-emerald-50 p-3 rounded-md hover:bg-emerald-100 transition-colors duration-300 transform hover:-translate-y-1">
                     <span class="text-emerald-700">Salário anual:</span>
-                    <strong class="text-emerald-900">¥ <?= number_format($salario_mensal * 12, 0, ',', '.') ?></strong>
+                    <strong class="text-emerald-900">¥ <?= number_format(calcularSalarioAnual($salario_mensal), 0, ',', '.') ?></strong>
                 </p>
 
                 <p class="bg-cyan-50 p-3 rounded-md hover:bg-cyan-100 transition-colors duration-300 transform hover:-translate-y-1">
