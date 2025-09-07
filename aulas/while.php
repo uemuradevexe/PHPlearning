@@ -8,6 +8,6 @@
 // }
 
 do {
-    echo "to garantindo q isso vai acontecer";
+    echo "to garantindo q isso vai acontecer antes da soma da idade";
     $idade++;
 } while($idade <= 20);
