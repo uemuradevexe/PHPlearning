@@ -1,26 +1,8 @@
 <?php
 
-$nome = "Ricardo Uemura";
-$idade = 21;
-$sexo = "Masculino";
-$salario_mensal = 180000; 
-$empregado = true;
-$skills = [
-    "PHP",
-    "Laravel",
-    "livewire",
-    "MySQL",
-    "JS",
-    "TS",
-    "Docker",
-    "React",
-    "Node",
-    "Next.js"
-];
-$aposentadoria;
-$status_empregado;
-define("APOSENTADORIA_MASCULINA","65");
-define("APOSENTADORIA_FEMININA","62");
+require("variaveis.php");
+include("constants.php");
+
 
 $status_empregado = ($empregado == true) ? "Empregado" : "Desempregado"; 
 
