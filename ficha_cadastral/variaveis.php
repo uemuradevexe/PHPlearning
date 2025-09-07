@@ -8,14 +8,19 @@ $empregado = true;
 $skills = [
     "PHP",
     "Laravel",
-    "livewire",
+    "Livewire",
     "MySQL",
-    "JS",
-    "TS",
+    "Javascript",
+    "Typescript",
     "Docker",
     "React",
     "Node",
-    "Next.js"
+    "Next.js",
+    "HTML",
+    "CSS",
+    "GIT",
+    "GitHub",
+    "Linux"
 ];
 
 $aposentadoria = null;
