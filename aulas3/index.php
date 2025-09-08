@@ -1,3 +1,15 @@
+<?php
+if(!empty($_POST['login']) && !empty($_POST['password'])){
+  $login = htmlspecialchars($_POST['login']);
+  $password = htmlspecialchars($_POST['password']);
+  
+    
+  $mensagem = ($login == "user" && $password === "0000") ? "Bem-Vindo $login" : "Usuario ou senha invalido";
+  
+  }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +18,17 @@
     <title>empresa</title>
 </head>
 <body>
-  <form action="dados.php" method="POST">
+  <form action="index.php" method="POST">
         <input type="text" name="login" placeholder="Digite seu ID">
         <br>
         <input type="password" name="password" placeholder="Digite sua senha">
         <br>
         <input type="submit" value="Enviar">
+        <?php
+        if(!empty($mensagem)){
+          echo $mensagem;
+        }
+        ?>
   </form>
 </body>
 </html>
