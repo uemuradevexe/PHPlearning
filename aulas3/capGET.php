@@ -1,7 +1,8 @@
 <?php
 
-$nome = $_GET["pessoa"];
-$idade = $_GET["idade"];
-
-
-echo "Oi, $nome, vc tem $idade anos?";
+if(!empty($_GET['campanha'])){
+    $numero_campanha = $_GET['campanha'];
+    echo "voce veio pela campanha " . $numero_campanha;
+} else{
+    echo "variavel nao definida";
+}
