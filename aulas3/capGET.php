@@ -1,5 +1,7 @@
 <?php
 
 $nome = $_GET["pessoa"];
+$idade = $_GET["idade"];
 
-echo "Ola, $nome";
+
+echo "Oi, $nome, vc tem $idade anos?";
