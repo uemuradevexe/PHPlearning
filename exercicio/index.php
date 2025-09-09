@@ -11,9 +11,9 @@
         <label for="usarname">Usuario:</label>
         <input type="text" name="user"><br>
         <label for="password">Senha:</label>
-        <input type="text" name="password"><br>
+        <input type="password" name="password"><br>
         <label for="lembrar">Tema preferido:</label>
-        <select name="tema" id="">
+        <select name="tema">
             <option value="escuro">escuro</option>
             <option value="claro">claro</option>
         </select><br>
