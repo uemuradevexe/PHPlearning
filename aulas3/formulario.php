@@ -1,4 +1,6 @@
 <?php
+
+
 if(!empty($_POST['login']) && !empty($_POST['password'])){
   $login = htmlspecialchars($_POST['login']);
   $password = htmlspecialchars($_POST['password']);
@@ -18,14 +20,14 @@ if(!empty($_POST['login']) && !empty($_POST['password'])){
     <title>empresa</title>
 </head>
 <body>
-  <form action="index.php" method="POST">
-        <input type="text" name="login" placeholder="Digite seu ID">
+  <form action="" method="POST">
+        <input type="text" name="login" placeholder="Digite seu ID" value="<?=$login ?? "" ?>">
         <br>
         <input type="password" name="password" placeholder="Digite sua senha">
         <br>
         <input type="submit" value="Enviar">
         <?php
-        if(!empty($mensagem)){
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
           echo $mensagem;
         }
         ?>
